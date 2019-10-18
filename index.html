@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chart</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </head>
+    <body class="container-fluid">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="row justify-content-lg-center">
+            <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-lg-center">
+            <input class="col-lg-2" type="submit" id="barBtn" value="Bar">
+            <input class="col-lg-2 offset-lg-1" type="submit" id="pieBtn" value="Pie">
+            <input class="col-lg-2 offset-lg-1" type="submit" id="radarBtn" value="Radar">
+        </div>
+        <hr>
+        <div class="row justify-content-lg-center">
+            <label for="workInput">Work</label>
+            <input class="col-lg-1" type="text" id="workInput">
+
+            <label for="MTGInput">MTG</label>
+            <input class="col-lg-1" type="text" id="MTGInput">
+
+            <label for="codingInput">Coding</label>
+            <input class="col-lg-1" type="text" id="codingInput">
+
+            <label for="eatingInput">Eating</label>
+            <input class="col-lg-1" type="text" id="eatingInput">
+
+            <label for="catInput">Cat</label>
+            <input class="col-lg-1" type="text" id="catInput">
+
+            <label for="drummingInput">Drumming</label>
+            <input class="col-lg-1" type="text" id="drummingInput">
+        </div>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script src="main.js" async defer></script>
+    </body>
+</html>
